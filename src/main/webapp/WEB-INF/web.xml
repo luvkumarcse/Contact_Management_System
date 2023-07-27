@@ -1,0 +1,108 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+        <servlet-name>spring</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+  <servlet>
+  	<servlet-name>UpdateRecord</servlet-name>
+  	<display-name>UpdateRecord</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.UpdateRecord</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SearchRecord</servlet-name>
+  	<display-name>SearchRecord</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.SearchRecord</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ChangePassword</servlet-name>
+  	<display-name>ChangePassword</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.ChangePassword</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>logout</servlet-name>
+  	<display-name>logout</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.logout</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminChangePassword</servlet-name>
+  	<display-name>AdminChangePassword</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.AdminChangePassword</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SearchUser</servlet-name>
+  	<display-name>SearchUser</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.SearchUser</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>userlogout</servlet-name>
+  	<display-name>userlogout</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.userlogout</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminManage</servlet-name>
+  	<display-name>AdminManage</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.AdminManage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminManageRecord</servlet-name>
+  	<display-name>AdminManageRecord</display-name>
+  	<description></description>
+  	<servlet-class>com.luv.controller.AdminManageRecord</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>spring</servlet-name>
+    <url-pattern>/</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>UpdateRecord</servlet-name>
+	<url-pattern>/UpdateRecord</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>SearchRecord</servlet-name>
+	<url-pattern>/SearchRecord</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ChangePassword</servlet-name>
+	<url-pattern>/ChangePassword</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>logout</servlet-name>
+	<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AdminChangePassword</servlet-name>
+	<url-pattern>/AdminChangePassword</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>SearchUser</servlet-name>
+	<url-pattern>/SearchUser</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>userlogout</servlet-name>
+	<url-pattern>/userlogout</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AdminManage</servlet-name>
+	<url-pattern>/AdminManage</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AdminManageRecord</servlet-name>
+	<url-pattern>/AdminManageRecord</url-pattern>
+</servlet-mapping>
+</web-app>
